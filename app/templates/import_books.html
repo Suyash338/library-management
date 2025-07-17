@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Import Books from Frappe</h2>
+<form method="post">
+    {{ form.hidden_tag() }}
+    <div class="mb-3">{{ form.title.label }} {{ form.title(class="form-control") }}</div>
+    <div class="mb-3">{{ form.num_books.label }} {{ form.num_books(class="form-control") }}</div>
+    {{ form.submit(class="btn btn-success") }}
+</form>
+{% endblock %}

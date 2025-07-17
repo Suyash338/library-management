@@ -1,0 +1,10 @@
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*.sqlite3
+
+# VSCode / Visual Studio settings
+.vs/
+*.sln
+*.user
+*.

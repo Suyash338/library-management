@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Issue Book</h2>
+<form method="post">
+    {{ form.hidden_tag() }}
+    <div class="mb-3">{{ form.member_id.label }} {{ form.member_id(class="form-select") }}</div>
+    <div class="mb-3">{{ form.book_id.label }} {{ form.book_id(class="form-select") }}</div>
+    {{ form.submit(class="btn btn-primary") }}
+</form>
+{% endblock %}

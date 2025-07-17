@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Return Book</h2>
+<form method="post">
+    {{ form.hidden_tag() }}
+    <div class="mb-3">{{ form.transaction_id.label }} {{ form.transaction_id(class="form-select") }}</div>
+    {{ form.submit(class="btn btn-primary") }}
+</form>
+{% endblock %}
